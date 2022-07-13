@@ -32,6 +32,34 @@ function verificar(){
 
     var totalclt = s1 + vr1 + vt1 + benf + inss + irpf + dt + ferias + terco
     clttotal.innerHTML = totalclt.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+    var contrato = window.document.getElementById('contrato')
+    var c1 = Number(contrato.value)
+    contrato1.innerHTML = c1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+    var imp = window.document.getElementById('imposto')
+    var imp1 = Number(imp.value)
+    var imp2 = (imp1 / 100) * -c1
+    imposto1.innerHTML = imp2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+    var totalpj = c1 +  + imp2 
+    pjtotal.innerHTML = totalpj.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+    var resultadofinal = ''
+   
+    if(totalclt > totalpj) {
+        resultadofinal = 'Neste cenário é mais vantajoso a modalidade CLT'
+
+        } else {
+            resultadofinal = 'Neste cenário é mais vantajoso a modalidade PJ'
+        }
+    fim.innerHTML = resultadofinal
+
+    
+
+
+
+   
     
 }
 

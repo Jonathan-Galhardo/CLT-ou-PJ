@@ -10,14 +10,15 @@
 </head>
 <body id="body" class="card-body" >
     <header class="container-fluid" id="titulo">
-        <h2 class="card-title">CLT OU PJ?</h2>
+        <div> <h2 id="titulo1" class="card-title">CLT OU PJ: Qual a melhor opção? </h2></div>
+        
     </header>
 
     <main class="container-fluid" id="bg-card">
         <Section class="row">
             <div id="card-clt" class="col-sm card text-white mt-1 mr-1 ml-1 mb-1">
                 <h5 class="card-title">CLT</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Convenção Das Leis Trabalhistas</h6>
+                <h6 class="card-subtitle mb-2 text-white">Carteira Assinada</h6>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span  class="input-group-text"> (+) Salário Mensal: R$</span>
@@ -49,24 +50,20 @@
            
             <div id="card-pj" class="col-sm card mt-1 mr-1 ml-1 mb-1">
                 <h5 class="card-title text-white">PJ</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Pessoa Jurídica</h6>
+                <h6 class="card-subtitle mb-2 text-white">Pessoa Jurídica</h6>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text"> (+) Valor mensal contrato: R$</span>
+                      <span class="input-group-text"> (+) Contrato/mês: R$</span>
                     </div>
-                    <input type="text" class="form-control" aria-label="Quantia">
+                    <input id="contrato" type="text" class="form-control" aria-label="Quantia">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">(-) Imposto</label>
+                      <span class="input-group-text"> (-) Imposto: %</span>
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                      <option selected>Selecione ... </option>
-                      <option value="1">Simples Nacional</option>
-                      <option value="2">Micro Empreendedor Individual</option>
-                    </select>
-                  </div>
-                
+                    <input id="imposto" type="text" class="form-control" aria-label="Quantia">
+                </div>
+              
             </div>
         </Section>
 
@@ -134,7 +131,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">  Valor Líquido Mensal: R$</span>
+                        <span class="input-group-text">  Líquido Mensal: R$</span>
                     </div>
                     <div id="clttotal" type="text" class="form-control" aria-label="Quantia"></div>
                 </div>
@@ -146,26 +143,30 @@
                 <h6 class="card-subtitle mb-2 text-muted">Resumo Cpmparativo</h6>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> (+) Ganho Bruto/mês: R$</span>
+                        <span class="input-group-text"> (+)Bruto/mês: R$</span>
                     </div>
-                    <input type="text" class="form-control" aria-label="Quantia">
+                    <div id="contrato1" type="text" class="form-control" aria-label="Quantia"></div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> (-) Imposto: R$</span>
                     </div>
-                    <input type="text" class="form-control" aria-label="Quantia">
+                    <div id="imposto1" type="text" class="form-control" aria-label="Quantia"></div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">  Valor Líquido Mensal: R$ R$</span>
+                        <span class="input-group-text">Líquido Mensal: R$ R$</span>
                     </div>
-                    <input type="text" class="form-control" aria-label="Quantia">
+                    <div id="pjtotal" type="text" class="form-control" aria-label="Quantia"></div>
                 </div>
-                
-            </div> 
+                        
         </Section>
-    </main>        
+    </div> 
+    <div id="fim" class="card-body">
+
+    </div>
+    </main> 
+          
 
         <footer class="navbar-fixed-bottom">
             Desenvolvido por: Jonathan Galhardo - Todos os direitos reservados.
