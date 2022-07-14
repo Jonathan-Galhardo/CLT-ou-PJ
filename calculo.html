@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Estilo Customizado-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>CLT ou PJ?</title>
+  </head>
+  <body>
+
+        <header> <!--Início Header-->
+            <nav class="navbar navbar-expand-sm navbar-light bg-success">
+                <div class="container">
+                    <a href="#" class="nvbar-brand">
+                        <img src="img/logo2.png">
+                    </a>
+
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="nav-principal">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="" class="nav-link ">Home</a></li>
+                            <li class="nav-item"><a href="" class="nav-link ml-1">Calculadora</a></li>
+                            <li class="nav-item"><a href="" class="nav-link ml-1">Resultado</a></li>
+                            <li class="nav-item"><a href="" class="nav-link btn btn-primary ml-2">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> <!--Fim Header-->
+
+        <section id="home"> <!--Início Seção-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <h1 class="display-5">APPCALC</h1>  
+                            <p >A sua calculadora Web!</p> 
+                            <p>Disponível para <a href="" class="btn btn-outline-light">
+                                <i class="fab fa-android fa-lg"></i></a>
+                                <a href="" class="btn btn-outline-light"> 
+                                    <i class="fab fa-apple fa-lg"></i>
+                                </a>
+                            </p>
+
+                        </div>
+                      
+                    </div>     
+                    <div class="col-md-6 d-none d-sm-block">
+                        <img src="img/calc1.png">
+                    </div>               
+                </div>
+            </div>
+        </section> <!--Fim Seção-->
+
+        <section class="caixa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <div id="card-clt" class="col-sm card mt-1 mr-1 ml-1 mb-1">
+                                <h5 class="card-title">CLT</h5>
+                                <h6 class="card-subtitle mb-2">Carteira Assinada</h6>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span  class="input-group-text"> (+) Salário Mensal: R$</span>
+                                    </div>
+                                    <input id="salario" type="text" class="form-control" aria-label="Quantia">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"> (-) Vale refeição: R$</span>
+                                    </div>
+                                    <input id="vr" type="text" class="form-control" aria-label="Quantia">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">  (-) Vale transporte: R$</span>
+                                    </div>
+                                    <input id="vt" type="text" class="form-control" aria-label="Quantia">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">  (+) Outros Benefícios: R$</span>
+                                    </div>
+                                    <input id="benf" type="text" class="form-control" aria-label="Quantia">
+                                </div>
+                                
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div id="card-pj" class="col-sm card mt-1 mr-1 ml-1 mb-1">
+                            <h5 class="card-title ">PJ</h5>
+                            <h6 class="card-subtitle mb-2 ">Pessoa Jurídica</h6>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"> (+) Contrato/mês: R$</span>
+                                </div>
+                                <input id="contrato" type="text" class="form-control" aria-label="Quantia">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"> (-) Imposto: %</span>
+                                </div>
+                                <input id="imposto" type="text" class="form-control" aria-label="Quantia">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"> (-) Contador: R$</span>
+                                </div>
+                                <input id="contador" type="text" class="form-control" aria-label="Quantia">
+                            </div>
+
+                            <section>
+                                <a href="resultado.html"></a><button type="button" class="btn btn-primary" value="Verificar" onclick="verificar()">Realizar Cálculo</button>
+                            </section>
+                          
+                        </div>         
+                    </div>
+                </div>
+                
+            </div>
+            
+            <script src="javascript.js"></script>
+        </section>
+
+        <section class="caixa fundo">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 d-flex">
+                        <div id="res-clt" class="col-sm card mt-2 mr-1 ml-1 mb-1">
+                                <h5 class="card-title">Resultado CLT</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Resumo Comparativo</h6>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> (+) Salário Mensal: R$</span>
+                                    </div>
+                                    <div type="text" class="form-control" aria-label="Quantia" id="salariores"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> (-) Vale refeição: R$</span>
+                                    </div>
+                                    <div id="vr2" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  (-) Vale transporte: R$</span>
+                                    </div>
+                                    <div id="vt2" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  (+) Benefícios: R$</span>
+                                    </div>
+                                    <div id="beneficiores" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> (-) INSS: R$</span>
+                                    </div>
+                                    <div id="inssres" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> (-) IRPF: R$</span>
+                                    </div>
+                                    <div id="irpfres" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  (+) 13ºSal. (1/12): R$</span>
+                                    </div>
+                                    <div id="dt1" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  (+) Férias: R$</span>
+                                    </div>
+                                    <div id="ferias1" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  (+) 1/3 Férias: R$</span>
+                                    </div>
+                                    <div id="terco1" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  Líquido Mensal: R$</span>
+                                    </div>
+                                    <div id="clttotal" type="text" class="form-control" aria-label="Quantia"></div>
+                                </div>
+                                
+                            </div> 
+                        
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div id="card-pj" class="col-sm card mt-1 mr-1 ml-1 mb-1">
+                            <div id="res-pj">
+                            <h5 class="card-title ">Resultado PJ</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Resumo Comparativo</h6>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> (+)Bruto/mês: R$</span>
+                                </div>
+                                <div id="contrato1" type="text" class="form-control" aria-label="Quantia"></div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> (-) Imposto: R$</span>
+                                </div>
+                                <div id="imposto1" type="text" class="form-control" aria-label="Quantia"></div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> (-) Contador: R$</span>
+                                </div>
+                            <div id="contador1" type="text" class="form-control" aria-label="Quantia"></div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">L. Mensal: R$ </span>
+                                </div>
+                                <div id="pjtotal" type="text" class="form-control" aria-label="Quantia"></div>
+                            </div>
+                                    
+                        </div>           
+                    </div>        
+                </div>
+            </div>
+            </section>
+                <section class="caixa">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 d-flex">
+                                <div class="align-self-center">
+                                 
+                                    <p id="fim1"></p>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/resultado.png" class="img-fluid"  >           
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+            </div>
+            <footer class="container " >
+                <div class="row flex">
+                    <div class="col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <div class="align-self-center">
+                            <p> &copy; Jonathan Galhardo - Desenvolvedor Web FrontEnd </P>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </footer>
+              
+        </section>   
+
+    <script src="javascript.js"></script>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

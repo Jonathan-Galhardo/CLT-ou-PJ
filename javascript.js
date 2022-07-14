@@ -58,7 +58,8 @@ function verificar(){
         } else {
             resultadofinal = 'Neste cenário é mais vantajoso a modalidade PJ'
         }
-    fim.innerHTML = resultadofinal
+        
+    fim1.innerHTML = resultadofinal
 
     
 

@@ -1,216 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Estilo Customizado-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
     <title>CLT ou PJ?</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body id="body" class="card-body" >
-    <header class="container-fluid" id="titulo">
-        <div class="rowtext-white">
-            <div class="title "> 
-                <p id="titulo1">CLT OU PJ: O que vale mais a pena para sua carreira?  </p>
+  </head>
+  <body>
+
+        <header> <!--Início Header-->
+            <nav class="navbar navbar-expand-sm navbar-light bg-success">
+                <div class="container">
+                    <a href="#" class="nvbar-brand"><img src="img/logo2.png"></a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="nav-principal">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link ">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ml-1">Cálculo</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link btn btn-primary ml-2">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> <!--Fim Header-->
+
+        <section id="home"> <!--Início Seção-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <h1 class="display-5">CLT OU PJ? Eis a questão!</h1>  
+                            <p >O que vale mais a pena para sua carreira?</p> 
+
+                            <form class="mt-4 mb-4">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" placeholder="cadastre seu e-mail" class="form-control">
+                                    <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary">Cadastre-se
+                                    </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <p>Disponível para
+                                <a href="" class="btn btn-outline-light"> 
+                                    <i class="fab fa-android fa-lg"></i>
+                                </a>
+                                <a href="" class="btn btn-outline-light"> 
+                                    <i class="fab fa-apple fa-lg"></i>
+                                </a>
+                            </p>
+
+                        </div>
+                      
+                    </div>     
+                    <div class="col-md-6 d-none d-sm-block">
+                        <img src="img/homem.png">
+                    </div>               
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="row mt-1 mr-1 ml-1 mb-1">
-        <div id="card-clt" class="col-sm card ">
-            <h5 class="card-title text-white ">CLT ou PJ</h5>
-                <h6 class="card-subtitle mb-2 text-white">Quais as diferenças?</h6>
-                <p class="text-white">A principal diferença entre CLT ou PJ é que no regime CLT você possui uma série de benefícios e carteira assinada, 
-                    o que é mais seguro e estável, porém você terá um salário líquido menor. 
-                    No regime PJ você recebe um salário líquido maior, porém deverá pagar por todos os benefícios do seu próprio bolso.</p>
-                <p class="text-white">Use nossa calculadora CLT x PJ abaixo e descubra o que vale mais a pena para você entre as duas modalidades!</p>
-        </div>
-        </div>
+        </section> <!--Fim Seção-->
 
-    </section>
-
-    <main class="container-fluid" id="bg-card">
-        <Section class="row">
-            <div id="card-clt" class="col-sm card text-white mt-1 mr-1 ml-1 mb-1">
-                <h5 class="card-title">CLT</h5>
-                <h6 class="card-subtitle mb-2 text-white">Carteira Assinada</h6>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span  class="input-group-text"> (+) Salário Mensal: R$</span>
+        <section class="caixa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <h2>Contratação CLT x PJ </h2>
+                            <p>A principal diferença entre CLT ou PJ é que no regime CLT você possui uma série de benefícios e carteira assinada, 
+                            o que é mais seguro e estável, porém você terá um salário líquido menor. 
+                            No regime PJ você recebe um salário líquido maior, porém deverá pagar por todos os benefícios do seu próprio bolso.
+                            </p>
+                        </div> 
                     </div>
-                    <input id="salario" type="text" class="form-control" aria-label="Quantia">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> (-) Vale refeição: R$</span>
+                    <div class="col-md-6">
+                        <img src="img/trabalho1.jpg" class="img-fluid"  >           
                     </div>
-                    <input id="vr" type="text" class="form-control" aria-label="Quantia">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">  (-) Vale transporte: R$</span>
-                    </div>
-                    <input id="vt" type="text" class="form-control" aria-label="Quantia">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">  (+) Outros Benefícios: R$</span>
-                    </div>
-                    <input id="benf" type="text" class="form-control" aria-label="Quantia">
                 </div>
                 
-            </div> 
-                     
-               
-           
-            <div id="card-pj" class="col-sm card mt-1 mr-1 ml-1 mb-1">
-                <h5 class="card-title text-white">PJ</h5>
-                <h6 class="card-subtitle mb-2 text-white">Pessoa Jurídica</h6>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> (+) Contrato/mês: R$</span>
-                    </div>
-                    <input id="contrato" type="text" class="form-control" aria-label="Quantia">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> (-) Imposto: %</span>
-                    </div>
-                    <input id="imposto" type="text" class="form-control" aria-label="Quantia">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> (-) Contador: R$</span>
-                    </div>
-                    <input id="contador" type="text" class="form-control" aria-label="Quantia">
-                </div>
-              
             </div>
-        </Section>
-
-        <section>
-            <button type="button" value="Verificar" onclick="verificar()">Realizar Cálculo</button>
         </section>
 
-        <Section class="row">
-            <div id="res-clt" class="col-sm card mt-2 mr-1 ml-1 mb-1">
-                <h5 class="card-title text-white">Resultado CLT</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Resumo Cpmparativo</h6>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> (+) Salário Mensal: R$</span>
+        <section class="caixa fundo" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/calc1.png" class="img-fluid"  >           
                     </div>
-                    <div type="text" class="form-control" aria-label="Quantia" id="salariores"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> (-) Vale refeição: R$</span>
+                    <div class="col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <h2>Você precisa tomar uma decisão entre continuar trabalhando como CLT ou abrir uma PJ?  </h2>
+                            <p>A nossa calculadora irá te ajudar a entender qual modelo te oferece mais vantagens no momento. É fácil e ágil!</p>
+                            <a href="calculo.html"><button type="button" class="btn btn-primary">Simule Agora!</button></a>
+                        </div> 
                     </div>
-                    <div id="vr2" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">  (-) Vale transporte: R$</span>
-                    </div>
-                    <div id="vt2" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">  (+) Benefícios: R$</span>
-                    </div>
-                    <div id="beneficiores" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> (-) INSS: R$</span>
-                    </div>
-                    <div id="inssres" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> (-) IRPF: R$</span>
-                    </div>
-                    <div id="irpfres" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">  (+) 13ºSal. (1/12): R$</span>
-                    </div>
-                    <div id="dt1" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">  (+) Férias: R$</span>
-                    </div>
-                    <div id="ferias1" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">  (+) 1/3 Férias: R$</span>
-                    </div>
-                    <div id="terco1" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">  Líquido Mensal: R$</span>
-                    </div>
-                    <div id="clttotal" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                
-            </div> 
-                 
-            <div id="res-pj" class="col-sm card mt-2 mr-1 ml-1 mb-1">
-                <h5 class="card-title text-white">Resultado PJ</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Resumo Cpmparativo</h6>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> (+)Bruto/mês: R$</span>
-                    </div>
-                    <div id="contrato1" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> (-) Imposto: R$</span>
-                    </div>
-                    <div id="imposto1" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> (-) Contador: R$</span>
-                    </div>
-                    <div id="contador1" type="text" class="form-control" aria-label="Quantia"></div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">L. Mensal: R$ R$</span>
-                    </div>
-                    <div id="pjtotal" type="text" class="form-control" aria-label="Quantia">REALIZE O CÁLCULO E CONFIRA O RESULTADO AQUI</div>
-                </div>
-                        
-        </Section>
-    
-        <section class="row mt-1 mr-1 ml-1 mb-1">
-            <div id="card-clt" class="col-sm card">
-                <h5 id="fim" class="card-title text-white text-center mt-1 "></h5>
-            </div>
                     
-   
+                </div>
                 
-    </main> 
-          
-
-        <footer class="navbar-fixed-bottom">
-            Desenvolvido por: Jonathan Galhardo - Todos os direitos reservados.
-        </footer >
-        
-            
+            </div>
         </section>
-   
+        <footer class="container " >
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="align-self-center">
+                        <div class="align-self-center">
+                        <p> &copy; Jonathan Galhardo - Desenvolvedor Web FrontEnd </P>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </footer>
 
-    
-
-
-
-    <script src="javascript.js"></script>
+        <script src="javascript.js"></script>
+        <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
