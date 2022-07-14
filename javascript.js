@@ -42,7 +42,12 @@ function verificar(){
     var imp2 = (imp1 / 100) * -c1
     imposto1.innerHTML = imp2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
-    var totalpj = c1 +  + imp2 
+    var contador = window.document.getElementById('contador')
+    var cont1 = Number(contador.value)
+    var cont2 = cont1 * -1
+    contador1.innerHTML = cont2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+    var totalpj = c1 + imp2 + cont2
     pjtotal.innerHTML = totalpj.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
     var resultadofinal = ''

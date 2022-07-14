@@ -10,9 +10,24 @@
 </head>
 <body id="body" class="card-body" >
     <header class="container-fluid" id="titulo">
-        <div> <h2 id="titulo1" class="card-title">CLT OU PJ: Qual a melhor opção? </h2></div>
-        
+        <div class="rowtext-white">
+            <div class="title "> 
+                <p id="titulo1">CLT OU PJ: O que vale mais a pena para sua carreira?  </p>
+            </div>
+        </div>
     </header>
+    <section class="row mt-1 mr-1 ml-1 mb-1">
+        <div id="card-clt" class="col-sm card ">
+            <h5 class="card-title text-white ">CLT ou PJ</h5>
+                <h6 class="card-subtitle mb-2 text-white">Quais as diferenças?</h6>
+                <p class="text-white">A principal diferença entre CLT ou PJ é que no regime CLT você possui uma série de benefícios e carteira assinada, 
+                    o que é mais seguro e estável, porém você terá um salário líquido menor. 
+                    No regime PJ você recebe um salário líquido maior, porém deverá pagar por todos os benefícios do seu próprio bolso.</p>
+                <p class="text-white">Use nossa calculadora CLT x PJ abaixo e descubra o que vale mais a pena para você entre as duas modalidades!</p>
+        </div>
+        </div>
+
+    </section>
 
     <main class="container-fluid" id="bg-card">
         <Section class="row">
@@ -63,6 +78,12 @@
                     </div>
                     <input id="imposto" type="text" class="form-control" aria-label="Quantia">
                 </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"> (-) Contador: R$</span>
+                    </div>
+                    <input id="contador" type="text" class="form-control" aria-label="Quantia">
+                </div>
               
             </div>
         </Section>
@@ -95,7 +116,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">  (+) Outros Benefícios: R$</span>
+                        <span class="input-group-text">  (+) Benefícios: R$</span>
                     </div>
                     <div id="beneficiores" type="text" class="form-control" aria-label="Quantia"></div>
                 </div>
@@ -113,7 +134,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">  (+) 13º Salário 1/12: R$</span>
+                        <span class="input-group-text">  (+) 13ºSal. (1/12): R$</span>
                     </div>
                     <div id="dt1" type="text" class="form-control" aria-label="Quantia"></div>
                 </div>
@@ -155,16 +176,26 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">Líquido Mensal: R$ R$</span>
+                        <span class="input-group-text"> (-) Contador: R$</span>
                     </div>
-                    <div id="pjtotal" type="text" class="form-control" aria-label="Quantia"></div>
+                    <div id="contador1" type="text" class="form-control" aria-label="Quantia"></div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">L. Mensal: R$ R$</span>
+                    </div>
+                    <div id="pjtotal" type="text" class="form-control" aria-label="Quantia">REALIZE O CÁLCULO E CONFIRA O RESULTADO AQUI</div>
                 </div>
                         
         </Section>
-    </div> 
-    <div id="fim" class="card-body">
-
-    </div>
+    
+        <section class="row mt-1 mr-1 ml-1 mb-1">
+            <div id="card-clt" class="col-sm card">
+                <h5 id="fim" class="card-title text-white text-center mt-1 "></h5>
+            </div>
+                    
+   
+                
     </main> 
           
 
