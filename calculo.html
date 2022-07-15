@@ -30,10 +30,9 @@
 
                     <div class="collapse navbar-collapse" id="nav-principal">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a href="" class="nav-link ">Home</a></li>
-                            <li class="nav-item"><a href="" class="nav-link ml-1">Calculadora</a></li>
-                            <li class="nav-item"><a href="" class="nav-link ml-1">Resultado</a></li>
-                            <li class="nav-item"><a href="" class="nav-link btn btn-primary ml-2">Login</a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+                            <li class="nav-item"><a href="calculo.html" class="nav-link ml-1">Calculadora</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link btn btn-primary ml-2">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,25 +75,25 @@
                                     <div class="input-group-prepend">
                                       <span  class="input-group-text"> (+) Salário Mensal: R$</span>
                                     </div>
-                                    <input id="salario" type="text" class="form-control" aria-label="Quantia">
+                                    <input id="salario" type="number" class="form-control" aria-label="Quantia" placeholder="salário bruto">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text"> (-) Vale refeição: R$</span>
                                     </div>
-                                    <input id="vr" type="text" class="form-control" aria-label="Quantia">
+                                    <input id="vr" type="number" class="form-control" aria-label="Quantia" placeholder="Valor descontado">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">  (-) Vale transporte: R$</span>
                                     </div>
-                                    <input id="vt" type="text" class="form-control" aria-label="Quantia">
+                                    <input id="vt" type="number" class="form-control" aria-label="Quantia" placeholder="Valor descontado">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text">  (+) Outros Benefícios: R$</span>
+                                      <span class="input-group-text">  (+) Benefícios: R$</span>
                                     </div>
-                                    <input id="benf" type="text" class="form-control" aria-label="Quantia">
+                                    <input id="benf" type="number" class="form-control" aria-label="Quantia" placeholder="Valor recebido em R$">
                                 </div>
                                 
                             </div> 
@@ -108,19 +107,19 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text"> (+) Contrato/mês: R$</span>
                                 </div>
-                                <input id="contrato" type="text" class="form-control" aria-label="Quantia">
+                                <input id="contrato" type="number" class="form-control" aria-label="Quantia" placeholder="Valor Bruto recebido ">
                             </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text"> (-) Imposto: %</span>
                                 </div>
-                                <input id="imposto" type="text" class="form-control" aria-label="Quantia">
+                                <input id="imposto" type="number" class="form-control" aria-label="Quantia" placeholder="Percentual pago de imposto">
                             </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text"> (-) Contador: R$</span>
                                 </div>
-                                <input id="contador" type="text" class="form-control" aria-label="Quantia">
+                                <input id="contador" type="number" class="form-control" aria-label="Quantia" placeholder="Valor mensal pago ao contador">
                             </div>
 
                             <section>
@@ -247,8 +246,9 @@
                         <div class="row">
                             <div class="col-md-6 d-flex">
                                 <div class="align-self-center">
-                                 
-                                    <p id="fim1"></p>
+                                    <div id="fim1">
+                                    
+                                    </div>
                                 </div> 
                             </div>
                             <div class="col-md-6">
@@ -260,15 +260,24 @@
                 </section>
                 
             </div>
-            <footer class="container " >
-                <div class="row flex">
-                    <div class="col-md-6 d-flex">
-                        <div class="align-self-center">
-                            <div class="align-self-center">
-                            <p> &copy; Jonathan Galhardo - Desenvolvedor Web FrontEnd </P>
-                            </div>
+            <footer class="mt-2 mb-2" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <p>Jonathan Galhardo - Desenvolvedor Web
+                                <a href="https://www.linkedin.com/in/jonathangalhardo" class="btn btn-outline-dark"> 
+                                    <i class="fab fa-brands fa-linkedin fa-lg"></i>
+                                </a>
+                                <a href="https://github.com/Jonathan-Galhardo" class="btn btn-outline-dark"> 
+                                    <i class="fab fa-brands fa-github-square fa-lg"></i>
+                                </a>
+                                <a href="https://contate.me/jonathangalhardo" class="btn btn-outline-dark">
+                                    <i class=" fab fa-brands fa-whatsapp-square fa-lg"></i>
+                                </a>
+                            </p>
                         </div>
                     </div>
+    
                 </div>        
             </footer>
               

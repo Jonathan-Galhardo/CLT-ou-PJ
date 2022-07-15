@@ -15,11 +15,35 @@ function verificar(){
     var benf = Number(beneficios.value)
     beneficiores.innerHTML = benf.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
-    var inss = s1 * -0.1
-    inssres.innerHTML = inss.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    var inss = ''
+    if(s1 <= 1212){
+        var inss = -0.075
+    } else if (s1 > 1212 && s1 < 2427.35){
+        var inss = -0.09
+    } else if (s1 < 3641.03){
+        var inss = -0.12
+    } else if (s1 < 7087.22){
+        var inss = -0.14
+    }
 
-    var irpf = s1 * -0.115
-    irpfres.innerHTML = irpf.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    var inss1 = s1 * inss
+    inssres.innerHTML = inss1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+    var irpf = ''
+    if(s1 <= 1903.98){
+        var irpf = 0
+    } else if (s1 > 1903.98 && s1 < 2826.66){
+        var irpf = -0.075
+    } else if (s1 < 3715.06){
+        var irpf = -0.15
+    } else if (s1 < 4664.69){
+        var irpf = -0.225
+    }else if (s1 >= 4664.69) { 
+        var irpf = -0.275
+    }
+    
+    var irpf1 = s1 * irpf
+    irpfres.innerHTML = irpf1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
     var dt = s1 / 12
     dt1.innerHTML = dt.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
