@@ -31,5 +31,5 @@ https://clt-ou-pj.vercel.app/
 Jonathan Galhardo - Desenvolvedor Web Forntend
 
 ### Licensas: 
-- O projeto é open surce; 
+- O projeto é open source; 
 - As imagens utilizadas no projeto foram retiradas do banco de imagens gratuitas "pexels".
