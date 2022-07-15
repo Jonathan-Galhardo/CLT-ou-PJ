@@ -12,3 +12,6 @@ O APPCALC como foi chamado realiza uma série de cálculos a partir de informaç
 - Cálculo do valor Líquido recebido na categoria PJ; 
 - Comparação entre as duas categorias; 
 - Exibição do Resultado Final na tela. 
+
+### Demonstração da Funcionalidade
+
