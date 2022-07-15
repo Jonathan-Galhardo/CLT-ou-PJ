@@ -18,13 +18,13 @@ function verificar(){
     var inss = ''
     if(s1 <= 1212){
         var inss = -0.075
-    } else if (s1 > 1212 && s1 < 2427.35){
-        var inss = -0.09
-    } else if (s1 < 3641.03){
-        var inss = -0.12
-    } else if (s1 < 7087.22){
-        var inss = -0.14
-    }
+    } else if (s1 > 1212 && s1 < 2427.36){
+        var inss = -0.08
+    } else if (s1 < 3641.04){
+        var inss = -0.095
+    } else if (s1 > 7087.23){
+        var inss = -0.11
+    } 
 
     var inss1 = s1 * inss
     inssres.innerHTML = inss1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
@@ -32,14 +32,14 @@ function verificar(){
     var irpf = ''
     if(s1 <= 1903.98){
         var irpf = 0
-    } else if (s1 > 1903.98 && s1 < 2826.66){
-        var irpf = -0.075
-    } else if (s1 < 3715.06){
-        var irpf = -0.15
-    } else if (s1 < 4664.69){
-        var irpf = -0.225
+    } else if (s1 > 1903.98 && s1 <= 2826.65){
+        var irpf = -0.017
+    } else if (s1 <= 3715.05){
+        var irpf = -0.0345
+    } else if (s1 <= 4664.68){
+        var irpf = -0.05
     }else if (s1 >= 4664.69) { 
-        var irpf = -0.275
+        var irpf = -0.109
     }
     
     var irpf1 = s1 * irpf
@@ -54,7 +54,7 @@ function verificar(){
     var terco = ferias / 3
     terco1.innerHTML = terco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
-    var totalclt = s1 + vr1 + vt1 + benf + inss + irpf + dt + ferias + terco
+    var totalclt = s1 + vr1 + vt1 + benf + inss1 + irpf1 + dt + ferias + terco
     clttotal.innerHTML = totalclt.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
     var contrato = window.document.getElementById('contrato')
@@ -77,10 +77,10 @@ function verificar(){
     var resultadofinal = ''
    
     if(totalclt > totalpj) {
-        resultadofinal = 'Neste cenário é mais vantajoso a modalidade CLT'
+        resultadofinal = 'Neste cenário é mais vantajoso a modalidade CLT. É importante esclarecer que este cálculo é apenas aproximado, para um cálculo mais preciso procure um contador.'
 
         } else {
-            resultadofinal = 'Neste cenário é mais vantajoso a modalidade PJ'
+            resultadofinal = 'Neste cenário é mais vantajoso a modalidade PJ. É importante esclarecer que este cálculo é apenas aproximado, para um cálculo mais preciso procure um contador.'
         }
         
     fim1.innerHTML = resultadofinal
