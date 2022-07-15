@@ -14,5 +14,7 @@ O APPCALC como foi chamado realiza uma série de cálculos a partir de informaç
 - Exibição do Resultado Final na tela. 
 
 ### Demonstração da Funcionalidade:
-https://github.com/Jonathan-Galhardo/CLT-ou-PJ/issues/1#issue-1306343854
+https://user-images.githubusercontent.com/89818336/179285014-0c39461b-9956-4796-b18e-522cabf9175e.mp4
+
+
 
