@@ -16,5 +16,20 @@ O APPCALC como foi chamado realiza uma série de cálculos a partir de informaç
 ### Demonstração da Funcionalidade:
 https://user-images.githubusercontent.com/89818336/179285014-0c39461b-9956-4796-b18e-522cabf9175e.mp4
 
+### Acesso ao projeto: 
+https://clt-ou-pj.vercel.app/
 
+### Tecnologias Utilizadas: 
+- HTML5 
+- CSS3
+- Bootstrap
+- Javascript 
+- jQuery
+- Ajax
 
+### Desenvolvedor(es): 
+Jonathan Galhardo - Desenvolvedor Web Forntend
+
+### Licensas: 
+- O projeto é open surce; 
+- As imagens utilizadas no projeto foram retiradas do banco de imagens gratuitas "pexels".
